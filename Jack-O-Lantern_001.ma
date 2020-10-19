@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Jack-O-Lantern_001.ma
-//Last modified: Mon, Oct 19, 2020 02:21:05 PM
+//Last modified: Mon, Oct 19, 2020 02:55:16 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiSkyDomeLight"
@@ -17,13 +17,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "5F1AA72E-0945-995C-C677-298F6743984E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -24.310536633434715 16.624157452572991 -56.275634178555492 ;
-	setAttr ".r" -type "double3" -10.538352728589359 -176.9999999998177 0 ;
+	setAttr ".t" -type "double3" -39.334452785939419 20.985993147435099 -41.402740822147749 ;
+	setAttr ".r" -type "double3" -19.538352728586815 -143.79999999980757 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F7D40034-4140-788A-26EC-7CB6BBD9F954";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 77.495874254625704;
+	setAttr ".coi" 62.488220235498801;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -79159,7 +79159,7 @@ createNode pointLight -n "pointLightShape1" -p "pointLight1";
 	rename -uid "88C934FD-D64D-763D-5B74-D5AE260B8F22";
 	setAttr -k off ".v";
 	setAttr ".cl" -type "float3" 1 0.93129069 0.48299998 ;
-	setAttr ".in" 1485.2940673828125;
+	setAttr ".in" 1500;
 	setAttr ".urs" no;
 	setAttr ".de" 3;
 	setAttr ".dr" 1549;
@@ -79174,7 +79174,7 @@ createNode pointLight -n "pointLightShape2" -p "pointLight2";
 	rename -uid "CB4D2E0E-B549-A498-422D-47BA9F84141E";
 	setAttr -k off ".v";
 	setAttr ".cl" -type "float3" 1 0.93129069 0.48299998 ;
-	setAttr ".in" 1000;
+	setAttr ".in" 800;
 	setAttr ".urs" no;
 	setAttr ".de" 3;
 	setAttr ".dms" yes;
@@ -79466,8 +79466,8 @@ connectAttr "areaLightShape2.ltd" ":lightList1.l" -na;
 connectAttr "areaLightShape3.ltd" ":lightList1.l" -na;
 connectAttr "pointLight2.iog" ":defaultLightSet.dsm" -na;
 connectAttr "aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
-connectAttr "pointLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "areaLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "areaLight2.iog" ":defaultLightSet.dsm" -na;
 connectAttr "areaLight3.iog" ":defaultLightSet.dsm" -na;
+connectAttr "pointLight1.iog" ":defaultLightSet.dsm" -na;
 // End of Jack-O-Lantern_001.ma
